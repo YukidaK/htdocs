@@ -1,0 +1,37 @@
+CREATE TABLE cliente(
+	cpf varchar(14),
+	nome varchar(40),
+	id int,
+	telefone varchar(20),
+	email varchar(100),
+	endereco varchar(100),
+	bairro varchar(50),
+	complemento varchar(100),
+	cidade varchar(50),
+	estado varchar(2),
+	cep varchar(10)
+);
+
+CREATE TABLE produto(
+	nome varchar(50),
+	id int,
+	descrição varchar(100),
+	fabricante varchar(100),
+	preco int,
+	quantidade int,
+	peso int
+);
+
+
+CREATE TABLE venda(
+	id_venda int,
+	id_cliente int,
+	data date,
+	endereco varchar(50),
+	pagamento varchar(20),
+	id_produto int,
+	quantidade int,
+	preco int,
+	subtotal int,
+	valortotal int
+);
